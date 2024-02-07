@@ -3,7 +3,7 @@
 MinimalFox is a minimalist user style for Firefox, focusing on reducing screen clutter and emphasizing simplicity and usability.
 
 <p align="center">
-  <img src="icon.webp" alt="MinimalFox Icon" width="100" height="100">
+  <img src="icon.png" alt="MinimalFox Icon" width="100" height="100">
 </p>
 
 
