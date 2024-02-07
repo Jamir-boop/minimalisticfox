@@ -3,10 +3,11 @@
 MinimalFox is a minimalist user style for Firefox, focusing on reducing screen clutter and emphasizing simplicity and usability.
 
 <p align="center">
-  <img src="icon.webp" alt="MinimalFox Icon">
+  <img src="icon.jpg" alt="MinimalFox Icon" width="100" height="100">
 </p>
 
-https://github.com/Jamir-boop/minimalisticfox/assets/73477811/d83f2c02-bd46-44c3-831c-16d278ed48ac
+
+https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb-a219-358267869ad3
 
 
 ## Prerequisites
@@ -30,7 +31,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/d83f2c02-bd46-44c3
 2. Open the profile folder (it may look like `xxxxxx.default-release`).
 3. Create a folder named `chrome` if it doesn't already exist.
 4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
-5. Open `userChrome.css` with a text editor and paste the CSS code provided at the beginning of this guide.
+5. Paste the `userChrome.css` file provided on this repo.
 
 ### Note on the screenshots
 
@@ -43,7 +44,7 @@ The provided CSS code makes several modifications to streamline the Firefox UI:
 - Hides the navigation bar by default, showing it only when the `navigator-toolbox` is hovered over or focused.
 - Adjusts tab appearance for minimalism.
 - Hides various UI elements like the tab close button and title bar buttons for a cleaner look.
-- Sets the font to "CaskaydiaCove NF" across the UI for consistency and readability.
+- Optionally you can set the font to "CaskaydiaCove NF" across the UI for consistency and readability (If you have it installed).
 
 ## Conclusion
 
