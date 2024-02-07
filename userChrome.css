@@ -1,0 +1,60 @@
+/* hide nav-bar */
+#nav-bar:not([customizing="true"]) {
+  min-height: 0px !important;
+  max-height: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: -0px !important;
+  transition: all 100ms ease 0s !important;
+  z-index: -5 !important;
+}
+
+/* show nav-bar on navigator-toolbox hover/focus */
+#navigator-toolbox:hover :-moz-any(#nav-bar),
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+  min-height: 32px !important;
+  max-height: 32px !important;
+  margin-top: 0px !important;
+  margin-bottom: -32px !important;
+  transition: all 100ms ease 0s !important;
+  z-index: 5 !important;
+}
+
+/* fix urlbar being too high in ff 74 */
+* {
+  --urlbar-toolbar-height: 32px !important;
+}
+
+/* tab stuff */
+.tab-background {
+  min-height: 0 !important;
+}
+.tabbrowser-tab[fadein] {
+  max-width: 100vw !important;
+}
+.tab-text {
+  margin: 0 auto !important;
+}
+
+
+/* Center tab icon */
+.tab-icon-stack {
+  margin-inline-start: auto;
+}
+.tab-label-container {
+  max-width: min-content;
+  margin-inline-end: auto;
+}
+
+
+
+/* Deactivating stuff to make UI simpler */
+.tab-close-button,
+#TabsToolbar .toolbarbutton-1,
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+/* Cascadya cove font */
+* {
+  font-family: "CaskaydiaCove NF" !important;
+}
