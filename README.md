@@ -13,6 +13,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 ## Prerequisites
 
 - Firefox Browser
+- Font CaskaydiaCove NF installed from [Nerd fonts.](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaCode.zip).
 - A userChrome.css file enabled (see instructions below on how to enable)
 
 ## Enabling userChrome.css in Firefox
@@ -32,6 +33,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 3. Create a folder named `chrome` if it doesn't already exist.
 4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
 5. Paste the `userChrome.css` file provided on this repo.
+6. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
 
 ### Note on the screenshots
 
