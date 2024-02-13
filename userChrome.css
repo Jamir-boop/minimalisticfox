@@ -35,7 +35,6 @@
   margin: 0 auto !important;
 }
 
-
 /* Center tab icon */
 .tab-icon-stack {
   margin-inline-start: auto;
@@ -45,11 +44,25 @@
   margin-inline-end: auto;
 }
 
+/* Fix empty space between tabs */
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"]{
+  width: 30px !important;
+}
+
+/* Keeps the .titlebar-spacer[type="pre-tabs"] and [type="post-tabs"] consistent in all window sizes */
+:root:not([sizemode="normal"]) .titlebar-spacer[type="pre-tabs"]{
+  display: block !important;
+}
+@media (max-width: 500px) {
+  .titlebar-spacer[type="post-tabs"] {
+    display: block !important;
+  }
+}
+
 /* Deactivating stuff to make UI simpler */
 .tab-close-button,
 #TabsToolbar .toolbarbutton-1,
-.titlebar-buttonbox-container,
-.titlebar-spacer[type="pre-tabs"] {
+.titlebar-buttonbox-container{
   display: none !important;
 }
 
