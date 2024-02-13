@@ -45,16 +45,17 @@
   margin-inline-end: auto;
 }
 
-
-
 /* Deactivating stuff to make UI simpler */
 .tab-close-button,
 #TabsToolbar .toolbarbutton-1,
-.titlebar-buttonbox-container {
+.titlebar-buttonbox-container,
+.titlebar-spacer[type="pre-tabs"] {
   display: none !important;
 }
 
 /* Cascadya cove font */
 * {
   font-family: "CaskaydiaCove NF" !important;
+/* OR */
+/*  font-family: "CaskaydiaCove Nerd Font" !important;*/
 }
