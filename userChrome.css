@@ -24,7 +24,7 @@
   --urlbar-toolbar-height: 32px !important;
 }
 
-/* tab stuff */
+/* hiding tab stuff */
 .tab-background {
   min-height: 0 !important;
 }
@@ -72,3 +72,14 @@
 /* OR */
 /*  font-family: "CaskaydiaCove Nerd Font" !important;*/
 }
+
+/* Context menu */
+menupopup, panel{
+  --panel-background: black !important;
+  --panel-border-radius: 15px !important;
+}
+/*
+menu, menuitem:where([_moz-menuactive]:not([disabled="true"])){
+  background-color: #242429 !important;
+}
+*/
