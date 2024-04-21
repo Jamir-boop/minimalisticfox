@@ -34,7 +34,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
 5. Paste the `userChrome.css` file provided on this repo.
 6. Restart your firefox.
-7. In `about:preferences` Set your default font to Caskaydia Cove NF ![image](https://github.com/Jamir-boop/minimalisticfox/assets/73477811/76692737-16c4-4b86-8094-99bd589a9bc2)
+7. At `about:preferences` Set your default font to Caskaydia Cove NF ![image](https://github.com/Jamir-boop/minimalisticfox/assets/73477811/76692737-16c4-4b86-8094-99bd589a9bc2)
 9. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
 
 ### Note on the screenshots
