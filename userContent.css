@@ -1,5 +1,5 @@
 @-moz-document url-prefix(about:) {
-    * {
-        font-family: "CaskaydiaCove NF" !important;
-    }
+	* {
+		font-family: Cascadia Code monospace !important;
+	}
 }
