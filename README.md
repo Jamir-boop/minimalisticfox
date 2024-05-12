@@ -33,7 +33,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 5. Paste the `userChrome.css` file provided on this repo.
 6. Restart your firefox.
 7. At `about:preferences` Set your default font to Cascadia Code
-<img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="60%">
+<img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="100%">
 9. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
 
 ### Note on the screenshots
