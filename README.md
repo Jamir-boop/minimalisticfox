@@ -13,15 +13,13 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 ## Prerequisites
 
 - Firefox Browser
-- Font CaskaydiaCove NF installed from [Nerd fonts.](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaCode.zip).
-- A userChrome.css file enabled (see instructions below on how to enable)
+- Font  [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) installed.
 
 ## Enabling userChrome.css in Firefox
 
 1. Open Firefox and type `about:config` in the address bar. Press Enter.
 2. Click "Accept the Risk and Continue" if prompted.
 3. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true` by clicking the toggle button.
-4. Restart Firefox for the change to take effect.
 
 ## Installation
 
@@ -34,7 +32,8 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
 5. Paste the `userChrome.css` file provided on this repo.
 6. Restart your firefox.
-7. At `about:preferences` Set your default font to Caskaydia Cove NF ![image](https://github.com/Jamir-boop/minimalisticfox/assets/73477811/76692737-16c4-4b86-8094-99bd589a9bc2)
+7. At `about:preferences` Set your default font to Cascadia Code
+<img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="60%">
 9. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
 
 ### Note on the screenshots
@@ -48,7 +47,7 @@ The provided CSS code makes several modifications to streamline the Firefox UI:
 - Hides the navigation bar by default, showing it only when the `navigator-toolbox` is hovered over or focused.
 - Adjusts tab appearance for minimalism.
 - Hides various UI elements like the tab close button and title bar buttons for a cleaner look.
-- Optionally you can set the font to "CaskaydiaCove NF" across the UI for consistency and readability (If you have it installed).
+- Optionally you can set the font to "Cascadia Code" across the UI for consistency and readability (If you have it installed).
 
 ## Conclusion
 
