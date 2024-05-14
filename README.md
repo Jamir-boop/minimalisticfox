@@ -22,7 +22,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 3. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true` by clicking the toggle button.
 4. Search for `browser.compactmode.show` and set it to `true` by clicking the toggle button.
 5. Set toolbar density to `compact`
-<img src="https://i.ibb.co/DLcKrt7/image.png" alt="image" border="0" width="40%">
+<img src="https://i.ibb.co/DLcKrt7/image.png" alt="image" border="0" width="200px">
 
 ## Installation
 
