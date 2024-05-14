@@ -20,6 +20,9 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 1. Open Firefox and type `about:config` in the address bar. Press Enter.
 2. Click "Accept the Risk and Continue" if prompted.
 3. Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true` by clicking the toggle button.
+4. Search for `browser.compactmode.show` and set it to `true` by clicking the toggle button.
+5. Set toolbar density to `compact`
+<img src="https://i.ibb.co/DLcKrt7/image.png" alt="image" border="0">
 
 ## Installation
 
