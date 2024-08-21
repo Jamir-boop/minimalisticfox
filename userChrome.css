@@ -73,14 +73,7 @@
 
 /* Context menu */
 menupopup, panel{
-	--panel-background: black !important;
+	--panel-background: black;
 	--panel-border-radius: 15px !important;
-	--panel-color: white !important;
+	--panel-color: white;
 }
-
-/*
-Items inside menu
-menu, menuitem:where([_moz-menuactive]:not([disabled="true"])){
-	background-color: #242429 !important;
-}
-*/
