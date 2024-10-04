@@ -6,14 +6,15 @@ MinimalFox is a minimalist user style for Firefox, focusing on reducing screen c
   <img src="icon.png" alt="MinimalFox Icon" width="100" height="100">
 </p>
 
+_*This was written mainly for [Firefox ESR](https://support.mozilla.org/en-US/kb/choosing-firefox-update-channel). but it can also work on standard versions._
 
 https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb-a219-358267869ad3
 
 
 ## Prerequisites
 
-- Firefox Browser
-- Font  [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) installed.
+- Firefox ESR Browser (recommended, but works with standard versions too).
+- Font [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) installed on your system.
 
 ## Enabling userChrome.css in Firefox
 
@@ -34,14 +35,14 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 3. Create a folder named `chrome` if it doesn't already exist.
 4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
 5. Paste the `userChrome.css` file provided on this repo.
-6. Restart your firefox.
+6. Restart firefox.
 7. At `about:preferences` Set your default font to Cascadia Code
 <img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="100%">
 9. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
 
 ### Note on the screenshots
 
-This style is usable in with any theme, the one that Im using is [Dark Space](https://github.com/nicoth-in/Dark-Space-Theme).
+This style is compatible with any theme, the one that I'm using the [Dark Space](https://github.com/nicoth-in/Dark-Space-Theme) theme.
 
 ## CSS Customizations Included
 

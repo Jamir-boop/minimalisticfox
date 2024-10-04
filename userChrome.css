@@ -19,9 +19,10 @@
 	z-index: 5 !important;
 }
 
-/* fix urlbar being too high in ff 74 */
+/* fix urlbar being too high in ff 128 */
 * {
 	--urlbar-toolbar-height: 32px !important;
+	--urlbar-container-height: 32px !important;
 }
 
 /* hiding tab stuff */
@@ -71,7 +72,7 @@
 	font-family: Cascadia Code monospace !important;
 }
 
-/* Context menu */
+/* Rounded context menu */
 menupopup, panel{
 	--panel-background: black;
 	--panel-border-radius: 15px !important;
