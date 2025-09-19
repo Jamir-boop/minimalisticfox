@@ -10,10 +10,9 @@ _*This was written mainly for [Firefox ESR](https://support.mozilla.org/en-US/kb
 
 https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb-a219-358267869ad3
 
-
 ## Prerequisites
 
-- Firefox ESR Browser (recommended, but works with standard versions too).
+- Firefox ESR Browser (recommended, might with standard versions too).
 - Font [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) installed on your system.
 
 ## Enabling userChrome.css in Firefox
@@ -24,21 +23,16 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 4. Search for `browser.compactmode.show` and set it to `true` by clicking the toggle button.
 5. Set toolbar density to `compact`
 <img src="https://i.ibb.co/dPRFWb2/image.png" alt="image" border="0" width="300px">
+6. (Optional) Disable tab previews: set `browser.tabs.hoverPreview` to `false`.
 
 ## Installation
 
-1. Open your Firefox profile directory:
-   - On Windows, press `Win+R`, type `%APPDATA%\Mozilla\Firefox\Profiles`, and press Enter.
-   - On macOS, open Finder, press `Command+Shift+G`, enter `~/Library/Application Support/Firefox/Profiles`, and press Enter.
-   - On Linux, the path is usually `~/.mozilla/firefox/`.
-2. Open the profile folder (it may look like `xxxxxx.default-release`).
-3. Create a folder named `chrome` if it doesn't already exist.
-4. Inside the `chrome` folder, create a file named `userChrome.css` if it doesn't already exist.
-5. Paste the `userChrome.css` file provided on this repo.
-6. Restart firefox.
-7. At `about:preferences` Set your default font to Cascadia Code
-<img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="100%">
-9. Optionally you can copy the `contentChrome.css` that applies the custom font into all `about:*` websites inside firefox.
+1. Open Firefox and go to your profile root folder (via `about:profiles`).
+2. Create a folder named `chrome` if it doesn’t exist.
+3. Copy the `userChrome.css` file from this repo into the `chrome` folder.
+4. Restart Firefox.
+5. At `about:preferences` Set your default font to Cascadia Code
+  <img src="https://i.ibb.co/0JvVP6Y/image.png" alt="image" border="0" width="100%">
 
 ### Note on the screenshots
 
@@ -51,10 +45,9 @@ The provided CSS code makes several modifications to streamline the Firefox UI:
 - Hides the navigation bar by default, showing it only when the `navigator-toolbox` is hovered over or focused.
 - Adjusts tab appearance for minimalism.
 - Hides various UI elements like the tab close button and title bar buttons for a cleaner look.
+- Extension menu shown in cleaner way.
 - Optionally you can set the font to "Cascadia Code" across the UI for consistency and readability (If you have it installed).
 
 ## Conclusion
 
 MinimalFox aims to offer a cleaner, more focused browsing experience by minimizing UI distractions. Remember, custom user styles like this are subject to break with future Firefox updates, so adjustments may be necessary over time.
-
-Enjoy your cleaner, more minimalist Firefox experience with MinimalFox!
