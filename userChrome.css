@@ -18,13 +18,13 @@
 /* --- Nav bar + urlbar reveal --- */
 #nav-bar{
   position: absolute !important;
-  top: 25px !important;
+  top: 0 !important;
   left: 0; right: 0;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
+  z-index: 9999 !important;
   opacity: 0 !important;
-  transition: all 100ms ease !important;
 }
 
 #urlbar{
@@ -35,7 +35,6 @@
 #navigator-toolbox:is(:hover, :focus-within) #nav-bar{
   top: 32px !important;
   opacity: 1 !important;
-  transition: all 50ms ease !important;
 }
 
 #navigator-toolbox:is(:hover, :focus-within) #urlbar{
