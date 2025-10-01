@@ -1,6 +1,6 @@
-# MinimalFox User Style for Firefox
+# MinimalFox User Style for Firefox ESR
 
-MinimalFox is a minimalist user style for Firefox, focusing on reducing screen clutter and emphasizing simplicity and usability.
+MinimalFox is a minimalist user style focused on reducing screen clutter and emphasizing simplicity and usability.
 
 <p align="center">
   <img src="icon.png" alt="MinimalFox Icon" width="100" height="100">
@@ -14,6 +14,7 @@ https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb
 
 - Firefox ESR Browser (recommended, might with standard versions too).
 - Font [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) installed on your system.
+- Knowing the basic shortcuts to close/open tabs (ctrl+w, ctrl+t) The more you know the better.
 
 ## Enabling userChrome.css in Firefox
 
