@@ -1,3 +1,9 @@
+:root {
+  &[uidensity="compact"] {
+    --tab-min-height: 20px !important;
+  }
+}
+
 /* --- Nav bar + urlbar reveal --- */
 #nav-bar{
   position: absolute !important;
