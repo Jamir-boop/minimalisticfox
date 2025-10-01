@@ -3,7 +3,18 @@
     --tab-min-height: 20px !important;
   }
 }
-
+/* Alert box at the bottom */
+#notifications-toolbar {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+/* sidebar-header hidden */
+#sidebar-header{
+  display: none !important;
+}
 /* --- Nav bar + urlbar reveal --- */
 #nav-bar{
   position: absolute !important;
