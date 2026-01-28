@@ -1,196 +1,223 @@
 :root {
-  &[uidensity="compact"] {
-    --tab-min-height: 20px !important;
-  }
+	&[uidensity="compact"] {
+		--tab-min-height: 20px !important;
+	}
 }
+
 /* Alert box at the bottom */
 #notifications-toolbar {
-  position: fixed !important;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9;
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
 }
+
 /* sidebar-header hidden */
-#sidebar-header{
-  display: none !important;
+#sidebar-header {
+	display: none !important;
 }
+
 /* --- Nav bar + urlbar reveal --- */
-#nav-bar{
-  position: absolute !important;
-  top: 0 !important;
-  left: 0; right: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  z-index: 9999 !important;
-  opacity: 0 !important;
+#nav-bar {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0;
+	right: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	z-index: 9999 !important;
+	opacity: 0 !important;
 }
 
-#urlbar{
-  opacity: 0 !important;
-  pointer-events: none !important;
+#urlbar {
+	opacity: 0 !important;
+	pointer-events: none !important;
 }
 
-#navigator-toolbox:is(:hover, :focus-within) #nav-bar{
-  top: 32px !important;
-  opacity: 1 !important;
+#navigator-toolbox:is(:hover, :focus-within) #nav-bar {
+	top: 32px !important;
+	opacity: 1 !important;
 }
 
-#navigator-toolbox:is(:hover, :focus-within) #urlbar{
-  opacity: 1 !important;
-  pointer-events: auto !important;
+#navigator-toolbox:is(:hover, :focus-within) #urlbar {
+	opacity: 1 !important;
+	pointer-events: auto !important;
 }
 
 /* Keep navigator-toolbox up */
-#navigator-toolbox { position: relative !important; z-index: 10000 !important; }
+#navigator-toolbox {
+	position: relative !important;
+	z-index: 10000 !important;
+}
 
 /* --- Tabs --- */
-.tab-background{ min-height: 0 !important; }
-.tab-text{ margin: 0 auto !important; }
+.tab-background {
+	min-height: 0 !important;
+}
+
+.tab-text {
+	margin: 0 auto !important;
+}
 
 /* Make tabs wide */
-.tabbrowser-tab[fadein]{ max-width: 100vw !important; }
+.tabbrowser-tab[fadein] {
+	max-width: 100vw !important;
+}
 
 /* Center tab icon + tighten label width */
-.tab-icon-stack{ margin-inline-start: auto !important; }
-.tab-label-container{
-  max-width: min-content !important;
-  margin-inline-end: auto !important;
+.tab-icon-stack {
+	margin-inline-start: auto !important;
+}
+
+.tab-label-container {
+	max-width: min-content !important;
+	margin-inline-end: auto !important;
 }
 
 /* Titlebar spacers: consistent sizing + visibility rules */
 .titlebar-spacer[type="pre-tabs"],
-.titlebar-spacer[type="post-tabs"]{
-  width: 30px !important;
+.titlebar-spacer[type="post-tabs"] {
+	width: 30px !important;
 }
 
-:root:not([sizemode="normal"]) .titlebar-spacer[type="pre-tabs"]{
-  display: block !important;
+:root:not([sizemode="normal"]) .titlebar-spacer[type="pre-tabs"] {
+	display: block !important;
 }
 
-@media (max-width: 500px){
-  .titlebar-spacer[type="post-tabs"]{ display: block !important; }
+@media (max-width: 500px) {
+	.titlebar-spacer[type="post-tabs"] {
+		display: block !important;
+	}
 }
 
 /* Hide window + tab chrome buttons */
 .tab-close-button,
 #TabsToolbar .toolbarbutton-1,
-.titlebar-buttonbox-container{
-  display: none !important;
+.titlebar-buttonbox-container {
+	display: none !important;
 }
 
 /* --- Global look --- */
-*{ font-family: "Cascadia Code", monospace !important; }
+* {
+	font-family: "Cascadia Code", monospace !important;
+}
 
-/* Rounded, dark context menus/panels */
-menupopup, panel{
-  --panel-background: black;
-  --panel-color: white;
-  --panel-border-radius: 15px !important;
+/* Rounded context menus/panels */
+menupopup,
+panel {
+	--panel-border-radius: 15px !important;
 }
 
 /* --- Unified Extensions: grid layout (updated for new structure) --- */
 
 /* Keep the panel as tight as the grid */
 #unified-extensions-view {
-  width: fit-content !important;
+	width: fit-content !important;
 }
 
 /* Make the body children (area + overflow list) a grid */
-#unified-extensions-panel .panel-subview-body > * {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important; /* set your column count here */
-  justify-items: center !important;
-  gap: 0 !important;
+#unified-extensions-panel .panel-subview-body>* {
+	display: grid !important;
+	grid-template-columns: repeat(5, 1fr) !important;
+	/* set your column count here */
+	justify-items: center !important;
+	gap: 0 !important;
 }
 
 /* Also ensure the two relevant containers are grids (future-proof) */
 #unified-extensions-panel #unified-extensions-area,
 #unified-extensions-panel #overflowed-extensions-list {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr) !important;
-  justify-items: center !important;
+	display: grid !important;
+	grid-template-columns: repeat(5, 1fr) !important;
+	justify-items: center !important;
 }
 
 /* Remove extra spacing from tiles */
 :is(panelview, #unified-extensions-area, #overflowed-extensions-list) .toolbaritem-combined-buttons,
 #unified-extensions-panel .unified-extensions-item {
-  margin: 0 !important;
+	margin: 0 !important;
 }
 
 /* Tile sizing (match old behavior) */
-#unified-extensions-panel #unified-extensions-area > .unified-extensions-item,
-#unified-extensions-panel #overflowed-extensions-list > .unified-extensions-item {
-  width: 60.6px !important;
-  height: 60.6px !important;
-  max-width: none !important;
-  max-height: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+#unified-extensions-panel #unified-extensions-area>.unified-extensions-item,
+#unified-extensions-panel #overflowed-extensions-list>.unified-extensions-item {
+	width: 60.6px !important;
+	height: 60.6px !important;
+	max-width: none !important;
+	max-height: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /* Inner wrapper should not add padding/margins */
 #unified-extensions-panel .unified-extensions-item-row-wrapper {
-  padding: 0 !important;
-  margin: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /* The main action button must fill the tile */
 #unified-extensions-panel #unified-extensions-area .unified-extensions-item-action-button,
 #unified-extensions-panel #overflowed-extensions-list .unified-extensions-item-action-button {
-  width: 100% !important;
-  height: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /* Center the icon inside the button, with the same padding ratio as before */
-#unified-extensions-panel #unified-extensions-area .unified-extensions-item-action-button > .toolbarbutton-badge-stack,
-#unified-extensions-panel #overflowed-extensions-list .unified-extensions-item-action-button > .toolbarbutton-badge-stack,
+#unified-extensions-panel #unified-extensions-area .unified-extensions-item-action-button>.toolbarbutton-badge-stack,
+#unified-extensions-panel #overflowed-extensions-list .unified-extensions-item-action-button>.toolbarbutton-badge-stack,
 #unified-extensions-panel .unified-extensions-list .unified-extensions-item-action-button {
-  display: grid !important;
-  width: 100% !important;
-  height: 100% !important;
-  padding: 20% !important;           /* same “icon breathing room” */
-  margin: 0 !important;
-  justify-content: center !important;
-  align-items: center !important;
+	display: grid !important;
+	width: 100% !important;
+	height: 100% !important;
+	padding: 20% !important;
+	/* same “icon breathing room” */
+	margin: 0 !important;
+	justify-content: center !important;
+	align-items: center !important;
 }
 
 /* Icon size inside tiles */
 #unified-extensions-panel .unified-extensions-item-action-button image.toolbarbutton-icon {
-  width: 26px !important;
-  height: 26px !important;
-  margin: auto !important;
+	width: 26px !important;
+	height: 26px !important;
+	margin: auto !important;
 }
 
 /* Hide elements you don’t want in the grid tiles (keep old behavior) */
-#unified-extensions-panel .unified-extensions-list,                  /* legacy side list */
-#unified-extensions-panel .unified-extensions-item-menu-button,      /* 3-dot menu */
-#unified-extensions-panel .unified-extensions-item-contents,         /* name + messages block */
-#unified-extensions-panel .unified-extensions-item-action-button > .toolbarbutton-text {
-  display: none !important;
+#unified-extensions-panel .unified-extensions-list,
+/* legacy side list */
+#unified-extensions-panel .unified-extensions-item-menu-button,
+/* 3-dot menu */
+#unified-extensions-panel .unified-extensions-item-contents,
+/* name + messages block */
+#unified-extensions-panel .unified-extensions-item-action-button>.toolbarbutton-text {
+	display: none !important;
 }
 
 /* Tighten subview buttons (keeps tiles flush) */
 #unified-extensions-panel .subviewbutton {
-  margin: 0 !important;
+	margin: 0 !important;
 }
 
 /* Optional: desaturate items shown in nav-bar customization target (preserves your old rule) */
-#nav-bar-customization-target > .unified-extensions-item {
-  filter: saturate(0%) brightness(120%) !important;
+#nav-bar-customization-target>.unified-extensions-item {
+	filter: saturate(0%) brightness(120%) !important;
 }
 
 /* --- Customization mode drag animation (apply to new area) --- */
-#customization-panelHolder > #unified-extensions-area > toolbarpaletteitem:not([notransition])[place="panel"] {
-  border-block-width: 0 !important;
-  transition: padding var(--drag-drop-transition-duration) ease-in-out !important;
+#customization-panelHolder>#unified-extensions-area>toolbarpaletteitem:not([notransition])[place="panel"] {
+	border-block-width: 0 !important;
+	transition: padding var(--drag-drop-transition-duration) ease-in-out !important;
 }
-#customization-panelHolder > #unified-extensions-area > toolbarpaletteitem:not([notransition])[place="panel"][dragover="before"] {
-  padding-inline-start: 20px !important;
+
+#customization-panelHolder>#unified-extensions-area>toolbarpaletteitem:not([notransition])[place="panel"][dragover="before"] {
+	padding-inline-start: 20px !important;
 }
-#customization-panelHolder > #unified-extensions-area > toolbarpaletteitem:not([notransition])[place="panel"][dragover="after"] {
-  padding-inline-end: 20px !important;
+
+#customization-panelHolder>#unified-extensions-area>toolbarpaletteitem:not([notransition])[place="panel"][dragover="after"] {
+	padding-inline-end: 20px !important;
 }
