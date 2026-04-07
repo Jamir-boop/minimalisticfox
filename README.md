@@ -6,7 +6,7 @@ MinimalFox is a minimalist user style focused on reducing screen clutter while k
   <img src="icon.png" alt="MinimalFox Icon" width="100" height="100">
 </p>
 
-_*This was written mainly for [Firefox ESR](https://support.mozilla.org/en-US/kb/choosing-firefox-update-channel), but it may also work on standard Firefox versions._*
+*This was written mainly for [Firefox ESR](https://support.mozilla.org/en-US/kb/choosing-firefox-update-channel), but it may also work on standard Firefox versions.*
 
 *This style is compatible with any theme. The one used in the screenshots is [Dark Space](https://github.com/nicoth-in/Dark-Space-Theme).*
 
