@@ -10,7 +10,7 @@ MinimalFox is a minimalist user style focused on reducing screen clutter while k
 
 *This style is compatible with any theme. The one used in the screenshots is [Dark Space](https://github.com/nicoth-in/Dark-Space-Theme).*
 
-https://github.com/Jamir-boop/minimalisticfox/assets/73477811/b2b9736d-6005-44cb-a219-358267869ad3
+https://github.com/user-attachments/assets/b31692f5-84b7-43a3-9ebf-dbd563a5c6f7
 
 ## Prerequisites
 
