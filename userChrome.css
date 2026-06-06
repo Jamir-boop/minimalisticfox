@@ -13,9 +13,9 @@
 	z-index: 9;
 }
 
-/* sidebar-header hidden */
+/* compact sidebar-header */
 #sidebar-header {
-	display: none !important;
+	padding: 0 !important;
 }
 
 /* --- Nav bar + urlbar reveal --- */
