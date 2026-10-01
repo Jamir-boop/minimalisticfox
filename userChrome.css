@@ -114,24 +114,17 @@ panel {
 
 /* Keep the panel as tight as the grid */
 #unified-extensions-view {
-	width: fit-content !important;
+	width: 303px !important;
+	overflow-wrap: anywhere !important;
 }
 
-/* Make the body children (area + overflow list) a grid */
-#unified-extensions-panel .panel-subview-body>* {
-	display: grid !important;
-	grid-template-columns: repeat(5, 1fr) !important;
-	/* set your column count here */
-	justify-items: center !important;
-	gap: 0 !important;
-}
-
-/* Also ensure the two relevant containers are grids (future-proof) */
+/* Only extension containers use the icon grid. */
 #unified-extensions-panel #unified-extensions-area,
 #unified-extensions-panel #overflowed-extensions-list {
 	display: grid !important;
 	grid-template-columns: repeat(5, 1fr) !important;
 	justify-items: center !important;
+	gap: 0 !important;
 }
 
 /* Remove extra spacing from tiles */
@@ -196,6 +189,26 @@ panel {
 /* name + messages block */
 #unified-extensions-panel .unified-extensions-item-action-button>.toolbarbutton-text {
 	display: none !important;
+}
+
+/* Visible item warnings need a full row and an extension name. */
+#unified-extensions-panel :is(#unified-extensions-area, #overflowed-extensions-list)>.unified-extensions-item:has(> unified-extensions-item-messagebar-wrapper:not([hidden]) > .unified-extensions-item-messagebar:not([hidden])) {
+	grid-column: 1 / -1 !important;
+	width: 100% !important;
+	height: auto !important;
+	min-width: 0 !important;
+
+	.unified-extensions-item-contents:not([hidden]) {
+		display: flex !important;
+		min-width: 0 !important;
+	}
+
+	.unified-extensions-item-action-button>.toolbarbutton-badge-stack {
+		width: 60.6px !important;
+		height: 60.6px !important;
+		padding: 0 !important;
+		flex: none !important;
+	}
 }
 
 /* Tighten subview buttons (keeps tiles flush) */

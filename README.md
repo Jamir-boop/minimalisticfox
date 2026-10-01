@@ -10,6 +10,8 @@ MinimalFox is a minimalist user style focused on reducing screen clutter while k
 
 *This style is compatible with any theme. The one used in the screenshots is [Dark Space](https://github.com/nicoth-in/Dark-Space-Theme).*
 
+[MinimalFox](https://github.com/Jamir-boop/minimalisticfox) owns toolbar reveal, compact tabs, browser chrome fonts, and the five-column extension grid and notification layout. In a combined setup, [Amber Black](https://github.com/Jamir-boop/amber-black) owns colors, background images, borders, focus, selection, carets, and about-page fonts.
+
 https://github.com/user-attachments/assets/b31692f5-84b7-43a3-9ebf-dbd563a5c6f7
 
 ## Prerequisites
@@ -41,6 +43,16 @@ https://github.com/user-attachments/assets/b31692f5-84b7-43a3-9ebf-dbd563a5c6f7
 5. In `about:preferences`, set your default font to Cascadia Code.
 
    ![Font settings](https://raw.githubusercontent.com/Jamir-boop/markdown-images/master/2026-04-07_15-18-54-image-20260407151359659.png)
+
+## Installation with Amber Black
+
+Keep the prerequisites, Firefox configuration, and font settings above. For the combined setup, use these file-copy steps:
+
+1. Copy this repository's `userChrome.css` as `<profile>/chrome/minimalFox.css`.
+2. Copy [Amber Black](https://github.com/Jamir-boop/amber-black)'s `firefox/userChrome.css`, `firefox/userContent.css`, and `firefox/img/` into the same `chrome` folder under their original names.
+3. Restart Firefox.
+
+Amber's `userChrome.css` imports the local `minimalFox.css` first. Its appearance rules then override MinimalFox's defaults. Keep one `userChrome.css` and one `minimalFox.css`; all CSS files stay local to the profile. The standalone installation above still uses MinimalFox directly as `userChrome.css`.
 
 ## Conclusion
 
