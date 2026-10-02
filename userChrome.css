@@ -53,6 +53,14 @@
 }
 
 /* --- Tabs --- */
+#tabbrowser-tabs[orient="horizontal"] .tabbrowser-tab {
+	padding-inline: 0 !important;
+}
+
+#tabbrowser-tabs[orient="horizontal"] .tab-context-line {
+	margin-inline: 0 !important;
+}
+
 .tab-background {
 	min-height: 0 !important;
 }
