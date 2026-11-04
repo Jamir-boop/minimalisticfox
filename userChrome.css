@@ -114,7 +114,7 @@
 
 /* Rounded context menus/panels */
 menupopup,
-panel {
+panel:not(.autoscroller) {
 	--panel-border-radius: 15px !important;
 }
 
@@ -128,7 +128,8 @@ panel {
 
 /* Only extension containers use the icon grid. */
 #unified-extensions-panel #unified-extensions-area,
-#unified-extensions-panel #overflowed-extensions-list {
+#unified-extensions-panel #overflowed-extensions-list,
+#unified-extensions-panel .unified-extensions-list {
 	display: grid !important;
 	grid-template-columns: repeat(5, 1fr) !important;
 	justify-items: center !important;
@@ -136,14 +137,15 @@ panel {
 }
 
 /* Remove extra spacing from tiles */
-:is(panelview, #unified-extensions-area, #overflowed-extensions-list) .toolbaritem-combined-buttons,
+#unified-extensions-panel .toolbaritem-combined-buttons,
 #unified-extensions-panel .unified-extensions-item {
 	margin: 0 !important;
 }
 
 /* Tile sizing (match old behavior) */
 #unified-extensions-panel #unified-extensions-area>.unified-extensions-item,
-#unified-extensions-panel #overflowed-extensions-list>.unified-extensions-item {
+#unified-extensions-panel #overflowed-extensions-list>.unified-extensions-item,
+#unified-extensions-panel .unified-extensions-list>.unified-extensions-item {
 	width: 60.6px !important;
 	height: 60.6px !important;
 	max-width: none !important;
@@ -189,8 +191,6 @@ panel {
 }
 
 /* Hide elements you don’t want in the grid tiles (keep old behavior) */
-#unified-extensions-panel .unified-extensions-list,
-/* legacy side list */
 #unified-extensions-panel .unified-extensions-item-menu-button,
 /* 3-dot menu */
 #unified-extensions-panel .unified-extensions-item-contents,
@@ -222,11 +222,6 @@ panel {
 /* Tighten subview buttons (keeps tiles flush) */
 #unified-extensions-panel .subviewbutton {
 	margin: 0 !important;
-}
-
-/* Optional: desaturate items shown in nav-bar customization target (preserves your old rule) */
-#nav-bar-customization-target>.unified-extensions-item {
-	filter: saturate(0%) brightness(120%) !important;
 }
 
 /* --- Customization mode drag animation (apply to new area) --- */
